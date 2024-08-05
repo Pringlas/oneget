@@ -17,11 +17,11 @@ const (
 	ExecutorProject   = "Executor"
 )
 const (
-	x64re      = "(?smU)(?:64-bit|64 бит).*"
+	x64re      = "(?smU)(?:\\(64-bit\\)|\\(64 бит\\)).*"
 	rpmre      = "(?smU)(?:RPM|ОС Linux|для Linux$|tar.bz2).*"
 	debre      = "(?smU)(?:DEB|ОС Linux|для Linux$|tar.bz2).*"
-	linuxre    = "(?smU)(?:LINUX|ОС Linux|для Linux$|Linux|tar.bz2).*"
-	windowsre  = "(?smU)(?:Windows|ОС Windows|zip).*"
+	linuxre    = "(?smU)(?:LINUX|ОС Linux|для Linux$|Linux-систем|tar.bz2).*"
+	windowsre  = "(?smU)(?:Windows$|ОС Windows|zip).*"
 	osxre      = "(?smU)(?:OS X|macOS|MacOS|ОС macOS).*"
 	clientre   = "(?smU)Клиент"
 	serverre   = "(?smU)(?:Cервер|Сервер)"
