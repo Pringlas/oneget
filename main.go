@@ -8,6 +8,7 @@ import (
 	"github.com/v8platform/oneget/cmd"
 
 	"os"
+	"os/signal"
 )
 
 var (
@@ -63,6 +64,13 @@ func setFlags() []cli.Flag {
 }
 
 func main() {
+	signals := make(chan os.Signal, 1)
+	signal.Notify(signals, os.Interrupt)
+	go func() {
+		<-signals
+		os.Exit(1)
+	}()
+
 	app := &cli.App{
 		Name:    "oneget",
 		Usage:   "Приложение для загрузки релизов сайта релизов 1С",
