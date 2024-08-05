@@ -236,12 +236,12 @@ Cервер 1С:Предприятия (Эльбрус-8С) для DEB-based Lin
 `,
 			false,
 		}, {
-			"server.linux.x64.full",
+			"linux.x64.full",
 			Platform83Project,
 			`Технологическая платформа 1С:Предприятия (64-bit) для Linux`,
 			true,
 		}, {
-			"server.linux.x64.full",
+			"linux.x64.full",
 			Platform83Project,
 			`Тонкий клиент 1С:Предприятие (64-bit) для Windows
 Тонкий клиент 1С:Предприятие (64-bit) для Windows
